@@ -1,0 +1,33 @@
+{
+  "name": "lume",
+  "version": "0.1.0",
+  "description": "A muted, elegant dark color theme with warm undertones and a soft lavender identity",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danfry1/lume.git"
+  },
+  "homepage": "https://github.com/danfry1/lume",
+  "bugs": {
+    "url": "https://github.com/danfry1/lume/issues"
+  },
+  "scripts": {
+    "generate": "bun scripts/generate.ts",
+    "test": "bun test",
+    "validate": "bun scripts/generate.ts --validate-only",
+    "check": "bun scripts/generate.ts --check",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["color-theme", "terminal", "neovim", "tmux", "dark-theme"],
+  "license": "MIT",
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "dependencies": {
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/mustache": "^4.2.6",
+    "bun-types": "^1.3.11",
+    "typescript": "^5.9.3"
+  }
+}

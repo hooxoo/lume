@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Lume — {{name}} ({{variant}})
+# https://github.com/danfry1/lume
+
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
+  --color=bg:{{backgrounds.base}},bg+:{{backgrounds.surface0}},fg:{{foregrounds.subtext}},fg+:{{foregrounds.text}} \
+  --color=hl:{{accents.lavender}},hl+:{{accents.rose}},info:{{accents.sky}},marker:{{accents.sage}} \
+  --color=prompt:{{accents.lavender}},spinner:{{accents.teal}},pointer:{{accents.rose}},header:{{accents.sky}} \
+  --color=border:{{backgrounds.surface1}},label:{{foregrounds.overlay}},query:{{foregrounds.text}}"

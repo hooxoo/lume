@@ -1,0 +1,27 @@
+{
+  "name": "lume-color-theme",
+  "displayName": "Lume Dark",
+  "description": "A muted, elegant dark color theme with warm undertones and a soft lavender identity",
+  "version": "0.1.0",
+  "publisher": "DanielFry",
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danfry1/lume"
+  },
+  "categories": ["Themes"],
+  "keywords": ["dark", "theme", "color-theme", "lavender"],
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Lume",
+        "uiTheme": "vs-dark",
+        "path": "./themes/lume-color-theme.json"
+      }
+    ]
+  }
+}
