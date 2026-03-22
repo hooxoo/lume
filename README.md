@@ -112,12 +112,8 @@
   "danfry1/lume",
   lazy = false,
   priority = 1000,
-  opts = {
-    transparent = false,
-    italics = true,
-  },
-  config = function(_, opts)
-    require("lume").setup(opts)
+  config = function()
+    require("lume").setup()
     vim.cmd("colorscheme lume")
   end,
 }
@@ -130,10 +126,7 @@
 use {
   "danfry1/lume",
   config = function()
-    require("lume").setup({
-      transparent = false,
-      italics = true,
-    })
+    require("lume").setup()
     vim.cmd("colorscheme lume")
   end,
 }
@@ -143,10 +136,14 @@ use {
 
 #### Options
 
-| Option | Type | Default | Description |
-|--------|------|---------|-------------|
-| `transparent` | `boolean` | `false` | Remove background color (use terminal background) |
-| `italics` | `boolean` | `true` | Enable italic text for comments and keywords |
+All options are optional — defaults work out of the box.
+
+```lua
+require("lume").setup({
+  transparent = false, -- set to true to use your terminal's background
+  italics = true,      -- set to false to disable italic comments/keywords
+})
+```
 
 #### Plugin support
 
